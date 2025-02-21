@@ -82,7 +82,7 @@
 
 .shadow__btn {
   background: rgb(0, 140, 255);
-  box-shadow: 0 0 20px rgb(0, 140, 255);
+  box-shadow: 0 0 20px #008cff;
 }
 
 .shadow__btn:hover {
