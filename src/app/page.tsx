@@ -5,56 +5,57 @@ import { SiteHeader } from "@/components/site-header";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
-import {
-  Zap,
-  Command,
-  Scale,
-  Bot,
-  Shield,
-  Sparkles,
-  Check,
-} from "lucide-react";
+import { Check } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col items-center justify-between ">
       <SiteHeader />
-      <main className="flex-1">
-        <section className="flex min-h-screen flex-col items-center justify-center space-y-10 py-24">
+      <main className="max-w-6xl w-full px-2">
+        <section className="border-x px-2 flex min-h-screen w-full flex-col items-center justify-center ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="container flex flex-col items-center justify-center gap-6 text-center"
+            className=" flex flex-col items-center justify-center gap-6 text-center"
           >
-            <motion.a
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              href="#"
-              className="inline-flex items-center rounded-full bg-muted px-4 py-1.5 text-sm font-medium"
+              className="inline-flex items-center rounded-full px-4 text-sm font-medium"
             >
-              🎉 <Separator className="mx-2 h-4" orientation="vertical" />{" "}
-              Introducing Quinx
-            </motion.a>
+              <div className=" px-4 ">
+                <div className="rounded border-b border-[#37FF8B] px-4 py-2">
+                  <p
+                    className="text-center text-xs font-medium text-[#A1E3CB] md:text-base"
+                    style={{
+                      textShadow: "0 0 10px rgba(161, 227, 203, 0.2)",
+                    }}
+                  >
+                    Community support, daily live office hours, and thousands of
+                    builders - all on Discord.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1]"
+              className=" font-bold text-5xl lg:text-8xl leading-[1.15] lg:leading-[1.2]"
             >
-              Build Discord Bots
-              <br />
-              Without Code
+              The Complete AI Agent Platform
             </motion.h1>
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl"
+              className="max-w-[750px] text-center text-xl md:text-2xl text-muted-foreground "
             >
-              Create, deploy, and scale Discord bots without writing a single
-              line of code.
+              Botpress is an all-in-one platform for building AI agents powered
+              by the latest LLMs.
             </motion.span>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -62,17 +63,13 @@ export default function Home() {
               transition={{ delay: 0.6 }}
               className="flex gap-4"
             >
-              <Button size="lg" className="h-12 px-8">
+              <button className="shadow__btn">uiverse</button>
+              <Button variant={"outline"}  className="h-12 px-8">
                 Start Building
-              </Button>
-              <Button size="lg" variant="outline" className="h-12 px-8">
-                View Demo
               </Button>
             </motion.div>
           </motion.div>
         </section>
-
-        <Separator className="my-12" />
 
         <section className="container space-y-12 py-12 md:py-24 lg:py-32">
           <motion.div
@@ -90,33 +87,6 @@ export default function Home() {
               bots that can scale to millions of users.
             </p>
           </motion.div>
-          <div className="mx-auto grid gap-8 sm:max-w-3xl sm:grid-cols-2 lg:max-w-5xl lg:grid-cols-3">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{
-                  rotateX: index % 2 === 0 ? 5 : -5,
-                  rotateY: index % 3 === 0 ? 5 : -5,
-                  transition: { duration: 0.3 },
-                }}
-                className="relative overflow-hidden rounded-lg border bg-background p-2"
-              >
-                <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-                  <feature.icon className="h-12 w-12 text-primary" />
-                  <div className="space-y-2">
-                    <h3 className="font-bold">{feature.name}</h3>
-                    <p className="text-sm text-muted-foreground">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </section>
 
         <Separator className="my-12" />
@@ -201,41 +171,6 @@ export default function Home() {
     </div>
   );
 }
-
-const features = [
-  {
-    name: "Easy Setup",
-    description:
-      "Get your bot up and running in minutes with our intuitive interface.",
-    icon: Zap,
-  },
-  {
-    name: "Powerful Commands",
-    description: "Create complex commands with our visual command builder.",
-    icon: Command,
-  },
-  {
-    name: "Scale Infinitely",
-    description: "Built to handle millions of users and messages.",
-    icon: Scale,
-  },
-  {
-    name: "AI-Powered",
-    description:
-      "Leverage artificial intelligence to create smarter responses.",
-    icon: Bot,
-  },
-  {
-    name: "Enterprise Security",
-    description: "Bank-grade security to protect your bot and users.",
-    icon: Shield,
-  },
-  {
-    name: "Custom Features",
-    description: "Build custom features without touching any code.",
-    icon: Sparkles,
-  },
-] as const;
 
 const pricingPlans = [
   {

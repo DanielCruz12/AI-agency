@@ -1,10 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-
-import { Button } from "@/components/ui/button";
 
 import {
   NavigationMenu,
@@ -16,18 +13,15 @@ import {
 } from "./ui/navigation-menu";
 
 export function SiteHeader() {
-  const pathname = usePathname();
-  const isAuthPage = pathname === "/signin" || pathname === "/register";
-
   return (
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      className="fixed top-0 z-50 w-full bg-black bg-opacity-75 backdrop-blur border-b border-gray-800"
     >
-      <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
+      <div className="max-w-6xl mx-auto w-full px-4 flex items-center justify-between h-16">
+        <Link href="/" className="text-white font-bold text-lg">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -96,16 +90,7 @@ export function SiteHeader() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        {!isAuthPage && (
-          <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" asChild>
-              <Link href="/signin">Log in</Link>
-            </Button>
-            <Button size="sm" asChild>
-              <Link href="/register">Get Started</Link>
-            </Button>
-          </div>
-        )}
+        <div className="flex items-center space-x-4">Try now</div>
       </div>
     </motion.header>
   );
