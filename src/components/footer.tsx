@@ -2,13 +2,14 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-black text-white py-12">
+    <footer className="flex flex-col items-center justify-center gap-6 text-center">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Quinx</h3>
             <p className="text-gray-400">
-              Building the future of Discord bots, one click at a time.
+              Building the future of Discord bots, <br />
+              one click at a time.
             </p>
           </div>
           <div>

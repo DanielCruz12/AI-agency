@@ -1,6 +1,8 @@
 "use client";
 
 import Footer from "@/components/footer";
+import Hero from "@/components/hero";
+import PopularSection from "@/components/popular-section";
 import { SiteHeader } from "@/components/site-header";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -13,62 +15,13 @@ export default function Home() {
       <SiteHeader />
       <main className="max-w-6xl w-full px-2">
         <section className="border-x px-2 flex min-h-screen w-full flex-col items-center justify-center ">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className=" flex flex-col items-center justify-center gap-6 text-center"
-          >
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="inline-flex items-center rounded-full px-4 text-sm font-medium"
-            >
-              <div className=" px-4 ">
-                <div className="rounded border-b border-[#37FF8B] px-4 py-2">
-                  <p
-                    className="text-center text-xs font-medium text-[#A1E3CB] md:text-base"
-                    style={{
-                      textShadow: "0 0 10px rgba(161, 227, 203, 0.2)",
-                    }}
-                  >
-                    Community support, daily live office hours, and thousands of
-                    builders - all on Discord.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+          <Hero />
+        </section>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className=" font-bold text-5xl lg:text-8xl leading-[1.15] lg:leading-[1.2]"
-            >
-              The Complete AI Agent Platform
-            </motion.h1>
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="max-w-[750px] text-center text-xl md:text-2xl text-muted-foreground "
-            >
-              Botpress is an all-in-one platform for building AI agents powered
-              by the latest LLMs.
-            </motion.span>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="flex gap-4"
-            >
-              <button className="shadow__btn">uiverse</button>
-              <Button variant={"outline"}  className="h-12 px-8">
-                Start Building
-              </Button>
-            </motion.div>
-          </motion.div>
+        <Separator className="my-12" />
+
+        <section className=" w-full bg-black bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JGB5H59vTcTs7ZsxjJBqKafPr6Xt3i.png')] bg-repeat">
+          <PopularSection />
         </section>
 
         <section className="container space-y-12 py-12 md:py-24 lg:py-32">
@@ -144,6 +97,8 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        {/* <AICard/> */}
 
         <Separator className="my-12" />
 
