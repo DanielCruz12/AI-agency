@@ -38,21 +38,8 @@ export default function PopularSection() {
       transition={{ delay: 0.6 }}
       className="flex gap-4"
     >
-      <div className="grid gap-8 lg:grid-cols-[1fr,2fr]">
+      <div className="grid gap-8 lg:grid-cols-[1fr,2fr] p-4">
         <div className="space-y-4">
-          <div className="inline-block rounded-lg border border-yellow-500/20 p-2">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="text-yellow-500"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-            </svg>
-          </div>
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
             Trending on Botpress
           </h1>
