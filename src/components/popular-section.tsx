@@ -38,21 +38,8 @@ export default function PopularSection() {
       transition={{ delay: 0.6 }}
       className="flex gap-4"
     >
-      <div className="grid gap-8 lg:grid-cols-[1fr,2fr]">
+      <div className="grid gap-8 lg:grid-cols-[1fr,2fr] p-4">
         <div className="space-y-4">
-          <div className="inline-block rounded-lg border border-yellow-500/20 p-2">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="text-yellow-500"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-            </svg>
-          </div>
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
             Trending on Botpress
           </h1>
@@ -73,7 +60,7 @@ export default function PopularSection() {
               {integrations.map((integration) => (
                 <div
                   key={integration.name}
-                  className="flex items-center justify-between rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10"
+                  className="flex items-center justify-between rounded-lg bg-[#1d1d1d] p-4 transition-colors hover:bg-[#252525]"
                 >
                   <div className="flex items-center gap-3">
                     {integration.icon}
@@ -94,7 +81,7 @@ export default function PopularSection() {
               {providers.map((provider) => (
                 <div
                   key={provider.name}
-                  className="flex items-center justify-between rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10"
+                  className="flex items-center justify-between rounded-lg bg-[#1d1d1d] p-4 transition-colors hover:bg-[#252525]"
                 >
                   <div className="flex items-center gap-3">
                     {provider.icon}

@@ -90,3 +90,32 @@
     0 0 40px rgb(0, 140, 255), 0 0 10px rgb(0, 140, 255);
 }
 
+.boxsha {
+  transition: background 0.3s ease-in-out;
+}
+
+.boxsha:hover {
+  box-shadow: 0 0 20px #000000, 0 0 35px rgb(60, 60, 60);
+  transition: box-shadow 0.6s ease-in-out;
+}
+.bgParticles {
+  --chart-line-color: rgba(255, 255, 255, 0.119);
+  position: relative; /* Se agrega para delimitar el contenedor */
+}
+
+.bgParticles::before {
+  content: "";
+  position: absolute; /* Cambiado de fixed a absolute */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+      to right,
+      var(--chart-line-color) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--chart-line-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+}
