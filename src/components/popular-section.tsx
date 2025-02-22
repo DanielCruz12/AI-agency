@@ -73,7 +73,7 @@ export default function PopularSection() {
               {integrations.map((integration) => (
                 <div
                   key={integration.name}
-                  className="flex items-center justify-between rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10"
+                  className="flex items-center justify-between rounded-lg bg-[#1d1d1d] p-4 transition-colors hover:bg-[#252525]"
                 >
                   <div className="flex items-center gap-3">
                     {integration.icon}
@@ -94,7 +94,7 @@ export default function PopularSection() {
               {providers.map((provider) => (
                 <div
                   key={provider.name}
-                  className="flex items-center justify-between rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10"
+                  className="flex items-center justify-between rounded-lg bg-[#1d1d1d] p-4 transition-colors hover:bg-[#252525]"
                 >
                   <div className="flex items-center gap-3">
                     {provider.icon}

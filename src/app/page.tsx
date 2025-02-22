@@ -1,5 +1,6 @@
 "use client";
 
+import AICard from "@/components/card-feature";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import PopularSection from "@/components/popular-section";
@@ -20,7 +21,7 @@ export default function Home() {
 
         <Separator className="my-12" />
 
-        <section className=" w-full bg-black bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JGB5H59vTcTs7ZsxjJBqKafPr6Xt3i.png')] bg-repeat">
+        <section className=" w-full bg-black bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JGB5H59vTcTs7ZsxjJBqKafPr6Xt3i.png')] opacity-20">
           <PopularSection />
         </section>
 
@@ -40,6 +41,20 @@ export default function Home() {
               bots that can scale to millions of users.
             </p>
           </motion.div>
+          <div className="max-w-5xl mx-auto grid grid-cols-12 gap-4">
+            <div className="col-span-12 md:col-span-7">
+              <AICard />
+            </div>
+            <div className="col-span-12 md:col-span-5">
+              <AICard />
+            </div>
+            <div className="col-span-12 md:col-span-5">
+              <AICard />
+            </div>
+            <div className="col-span-12 md:col-span-7">
+              <AICard />
+            </div>
+          </div>
         </section>
 
         <Separator className="my-12" />
@@ -97,8 +112,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-        {/* <AICard/> */}
 
         <Separator className="my-12" />
 
