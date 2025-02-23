@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/site-header";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 
 export default function Home() {
   return (
@@ -51,13 +51,13 @@ export default function Home() {
 
         <Separator />
 
-        <section id="pricing" className="container py-12 md:py-24">
+        <section id="pricing" className="bgParticles py-12 md:py-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center"
+            className="mx-auto flex flex-col items-center justify-center gap-4 text-center"
           >
             <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">
               Simple, transparent pricing
@@ -67,7 +67,7 @@ export default function Home() {
               Discord bots today.
             </p>
           </motion.div>
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
             {pricingPlans.map((plan, index) => (
               <motion.div
                 key={index}
@@ -98,16 +98,17 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <Button className="mt-8 w-full">{plan.buttonText}</Button>
+                  <button className="mt-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/20">
+                    {plan.buttonText}
+                    <ArrowUpRight className="h-4 w-4" />
+                  </button>
                 </div>
               </motion.div>
             ))}
           </div>
         </section>
 
-        <Separator className="my-12" />
-
-        <section className="container py-12 md:py-24 lg:py-32">
+        <section className=" py-12 md:py-24 lg:py-32">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -192,10 +193,22 @@ const pricingPlans = [
       "Unlimited bots",
       "Unlimited users",
       "Advanced commands",
+      "Analytics dashboard",
+    ],
+    buttonText: "Upgrade to Pro",
+  },
+  {
+    name: "Debuggin",
+    price: 100,
+    description: "Ideal for growing communities and businesses.",
+    features: [
+      "Unlimited bots",
+      "Unlimited users",
+      "Advanced commands",
       "Priority support",
       "Custom branding",
       "Analytics dashboard",
     ],
     buttonText: "Upgrade to Pro",
   },
-] as const;
+];

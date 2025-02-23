@@ -31,22 +31,6 @@ export default function Footer() {
                   Pricing
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="#about"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
             </ul>
           </div>
           <div>
@@ -81,14 +65,7 @@ export default function Footer() {
                   Twitter
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  GitHub
-                </a>
-              </li>
+
               <li>
                 <a
                   href="#"
