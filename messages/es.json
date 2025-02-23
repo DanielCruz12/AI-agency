@@ -1,0 +1,66 @@
+{
+    "Index": {
+        "changer": {
+            "handleButtonChangler": "Idioma",
+            "SpanishChangler": "Español",
+            "EnglishChangler": "Inglés"
+        },
+        "navbar": {
+            "home": "Inicio",
+            "whoWeAre": "Quiénes somos",
+            "solutions": "Soluciones",
+            "token": "Token",
+            "partners": "Socios",
+            "contact": "Contáctanos"
+        },
+        "hero": {
+            "title": "Infraestructura de ",
+            "subtitle": "Energía limpia.",
+            "subtitle2": "Soluciones de",
+            "subtitleContinued": "Energía sostenible.",
+            "description": "Tecnología de vanguardia para construir infraestructura de energía de transición para centros de datos de AI y HPC, instalaciones de minería de criptomonedas, proyectos industriales, comerciales y residenciales."
+        },
+        "team": {
+            "essence": "Descubriendo la esencia de nuestra ",
+            "essence2": "Dedicación a la innovación ",
+            "essence3": "energética sostenible",
+            "options": {
+                "readMore": "Leer más",
+                "readLess": "Leer menos"
+            }
+        },
+        "solutions": {
+            "title": "Descubra soluciones innovadoras ",
+            "subtitle": "y estratégicas para su proyecto"
+        },
+        "sponsors": {
+            "title": "Potenciando el crecimiento mediante ",
+            "subtitle": "asociaciones estratégicas"
+        },
+        "footer": {
+            "text1": "Derechos de autor ",
+            "text2": " Todos los derechos reservados",
+            "text3": "Desarrollado por ",
+            "contact": "Contáctanos"
+        }
+    },
+    "VoltaPage": {
+        "heroTitle": "El primer proyecto de cadena de bloques de activos del mundo real para construir infraestructura de energía de transición de alto nivel en todo el mundo.",
+        "buttonText": " Mantente listo"
+    },
+    "ContactPage": {
+        "title": "Contáctanos",
+        "subtitle": "¿Estás listo para potenciar tus proyectos con soluciones energéticas de vanguardia? Contáctenos hoy para saber cómo nuestra tecnología avanzada puede ayudar a construir una infraestructura sostenible y eficiente. Haznos saber.",
+        "form": {
+            "nameLabel": "Tu nombre",
+            "namePlaceholder": "Satoshi Nakamoto",
+            "emailLabel": "Tu correo electrónico",
+            "emailPlaceholder": "nombre@volta.com",
+            "messageLabel": "Tu mensaje",
+            "messagePlaceholder": "Deja un comentario...",
+            "submitButton": "Enviar correo electrónico",
+            "successMessage": "Correo enviado con éxito.",
+            "errorMessage": "Algo salió mal.."
+        }
+    }
+}

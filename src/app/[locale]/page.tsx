@@ -9,8 +9,10 @@ import { SiteHeader } from "@/components/site-header";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("Index");
   return (
     <div className="flex min-h-screen flex-col items-center justify-between ">
       <SiteHeader />
@@ -33,7 +35,7 @@ export default function Home() {
             className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center"
           >
             <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">
-              Features built for scale
+            {t("hero.title")}
             </h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
               Quinx provides all the tools you need to create powerful Discord
@@ -118,4 +120,3 @@ const features = [
     image: "custom-image.png",
   },
 ];
-

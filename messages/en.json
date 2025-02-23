@@ -1,0 +1,67 @@
+{
+    "Index": {
+      "changer": {
+        "handleButtonChangler": "Language",
+        "SpanishChangler": "Spanish",
+        "EnglishChangler": "English"
+      },
+      "navbar": {
+        "home": "Home",
+        "whoWeAre": "Who we are",
+        "solutions": "Solutions",
+        "token": "Token",
+        "partners": "Partners",
+        "contact": "Contact"
+      },
+      "hero": {
+        "title": "Clean energy ",
+        "subtitle": "infrastructure.",
+        "subtitle2": "Sustainable energy",
+        "subtitleContinued": "solutions.",
+        "description": "Cutting-edge technology to build transition-energy infrastructure for AI & HPC Data Centers, Crypto Mining Facilities, Industrial, Commercial, and Residential projects."
+      },
+      "team": {
+        "essence": "Uncovering the Essence of Our ",
+        "essence2": "Dedication to Sustainable ",
+        "essence3": "Energy Innovation",
+        "options": {
+          "readMore": "Read more",
+          "readLess": "Read less"
+        }
+      },
+      "solutions": {
+        "title": "Discover Innovative and Strategic ",
+        "subtitle": "Solutions for Your Project"
+      },
+      "sponsors": {
+        "title": "Empowering Growth Through ",
+        "subtitle": "Strategic Partnership"
+      },
+      "footer": {
+        "text1": "Copyright ",
+        "text2": " All Rights Reserved",
+        "text3": "Powered by ",
+        "contact": "Contact us"
+      }
+    },
+    "VoltaPage": {
+      "heroTitle": "The first Real-World-Asset Blockchain project to build high-end transition-energy infrastructure worldwide.",
+      "buttonText": " Getting ready"
+    },
+    "ContactPage": {
+      "title": "Contact Us",
+      "subtitle": "Are you ready to power your projects with cutting-edge energy solutions? Contact us today to learn how our advanced technology can help build sustainable, efficient infrastructure. Let us know.",
+      "form": {
+        "nameLabel": "Your name",
+        "namePlaceholder": "Satoshi Nakamoto",
+        "emailLabel": "Your email",
+        "emailPlaceholder": "name@volta.com",
+        "messageLabel": "Your message",
+        "messagePlaceholder": "Leave a comment...",
+        "submitButton": "Send email",
+        "successMessage": "Email successfully sent.",
+        "errorMessage": "Something went wrong.."
+      }
+    }
+  }
+  
