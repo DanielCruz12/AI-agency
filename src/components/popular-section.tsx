@@ -41,7 +41,7 @@ export default function PopularSection() {
       <div className="grid gap-8 lg:grid-cols-[1fr,2fr] p-4">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-            Trending on Botpress
+            Trending on ViriBot
           </h1>
           <p className="text-lg text-gray-400">
             The largest ecosystem to build production-ready AI agents.

@@ -7,7 +7,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "Lamoe ( ͡° ͜ʖ ͡°)",
+  title: "ViriBot ( •_•)",
   description: "The complete AI platform to create and manage agents",
 };
 
