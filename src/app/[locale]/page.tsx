@@ -38,7 +38,7 @@ export default function Home() {
             {t("hero.title")}
             </h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              Quinx provides all the tools you need to create powerful Discord
+              ViriBot provides all the tools you need to create powerful Discord
               bots that can scale to millions of users.
             </p>
           </motion.div>

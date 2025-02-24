@@ -11,13 +11,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "./ui/navigation-menu";
+import { LanguageSelector } from "./language-selector";
 
 export function SiteHeader() {
   return (
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.2 }}
       className="fixed top-0 z-50 w-full bg-black bg-opacity-75 backdrop-blur border-b border-gray-800"
     >
       <div className="max-w-6xl mx-auto w-full px-4 flex items-center justify-between h-16">
@@ -28,7 +29,7 @@ export function SiteHeader() {
             transition={{ delay: 0.5 }}
             className="text-2xl font-bold"
           >
-            Quinx
+            ViriBot
           </motion.span>
         </Link>
         <NavigationMenu className="hidden md:flex">
@@ -90,7 +91,8 @@ export function SiteHeader() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="flex items-center space-x-4">Try now</div>
+
+        <LanguageSelector />
       </div>
     </motion.header>
   );

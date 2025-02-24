@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row justify-between gap-6">
           <div>
-            <h3 className="text-lg font-semibold">Quinx</h3>
+            <h3 className="text-lg font-semibold">ViriBot</h3>
             <p className="text-gray-400 text-sm mt-2">
               Building the future of Discord bots, one click <br /> at a time.
             </p>
@@ -64,7 +64,7 @@ export default function Footer() {
           </div> */}
         </div>
         <div className="mt-8 border-t border-gray-800 pt-4 text-gray-400 text-sm text-center">
-          <p>&copy; {new Date().getFullYear()} Quinx. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ViriBot. All rights reserved.</p>
         </div>
       </div>
     </footer>

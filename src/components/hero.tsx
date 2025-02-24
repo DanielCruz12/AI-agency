@@ -44,7 +44,7 @@ export default function Hero() {
         transition={{ delay: 0.5 }}
         className="max-w-[750px] text-center text-xl md:text-2xl text-muted-foreground "
       >
-        Botpress is an all-in-one platform for building AI agents powered by the
+        ViriBot is an all-in-one platform for building AI agents powered by the
         latest LLMs.
       </motion.span>
       <motion.div
